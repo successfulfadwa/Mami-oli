@@ -1408,10 +1408,10 @@ textarea.input-field {
   .hero-content > :is(*, .btn) { margin-inline: 0; }
   .hero-content {
    
-    animation: myAnim 2s ease 0s 1 normal forwards;
-}
+    animation: hero-content 2s ease 0s 1 normal forwards;
+  }
 
-@keyframes myAnim {
+@keyframes hero-content {
   0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
