@@ -586,20 +586,24 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 
 .promo-card {
   position: relative;
-  background-color: var(--white);
-  text-align: center;
+  border-radius: 438.001px;
+  background: var(--goldy, linear-gradient(215deg, rgba(255, 255, 255, 0.51) 8.27%, rgba(255, 255, 255, 0.07) 91.28%, rgba(255, 255, 255, 0.00) 103.71%));  text-align: center;
   padding: 40px 30px;
-  box-shadow: var(--shadow-2);
   z-index: 1;
+  box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.079711437225342px);
 }
 
 .promo-card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--deep-saffron);
-  clip-path: var(--clip-path-1);
-  transform: scaleY(0.3);
+  border-radius: 438.001px;
+
+  background: linear-gradient(93deg, #FFAFB7 -6.36%, #FFD2A6 136.3%);
+  box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.079711437225342px);  clip-path: var(--clip-path-1);
+  transform: scaleY(0.001);
   transform-origin: bottom;
   z-index: -1;
   transition: var(--transition-1);
@@ -635,6 +639,8 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 .promo-item {
   min-width: 100%;
   scroll-snap-align: start;
+  padding: 10px;
+
 }
 
 
@@ -1354,6 +1360,7 @@ textarea.input-field {
     max-width: 550px;
     width: 100%;
     margin-inline: auto;
+
   }
 
   .has-scrollbar > li { min-width: calc(50% - 5px); }
@@ -1408,10 +1415,10 @@ textarea.input-field {
   .hero-content > :is(*, .btn) { margin-inline: 0; }
   .hero-content {
    
-    animation: hero-content 2s ease 0s 1 normal forwards;
-  }
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
 
-@keyframes hero-content {
+@keyframes myAnim {
   0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
