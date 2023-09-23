@@ -263,6 +263,10 @@ color: #777;
 
 .section-divider.gray::after { background-image: url("../images/shape-grey.png"); }
 
+.section-divider.gray {
+   padding-right: 10px;
+   padding-bottom: 10px;
+ }
 .w-100 { width: 100%; }
 
 .has-scrollbar {
