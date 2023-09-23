@@ -631,7 +631,29 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 }
 
 .promo-card .card-banner {
-  max-width: max-content;
+  max-width: 290px;
+  margin-inline: auto;
+  aspect-ratio: 1 / 1;
+}
+.promo-card .card-bannerj {
+  width: 100%;
+  height: 100%;
+  padding-right: 9%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  margin-inline: auto;
+  aspect-ratio: 1 / 1;
+}
+.promo-card .card-bannerd {
+  width: 100%;
+  height: 50%;
+  padding-right: 9%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
   margin-inline: auto;
   aspect-ratio: 1 / 1;
 }
@@ -1360,6 +1382,7 @@ textarea.input-field {
     max-width: 550px;
     width: 100%;
     margin-inline: auto;
+    
 
   }
 
