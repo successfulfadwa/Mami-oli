@@ -10,8 +10,10 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  
   <!-- 
     - custom css link
   -->
@@ -36,7 +38,7 @@
 </head>
 
 <body id="top">
-
+ 
   <!-- 
     - #HEADER
   -->
@@ -165,7 +167,7 @@
           <ul class="promo-list has-scrollbar">
 
             <li class="promo-item">
-              <div class="promo-card">
+              <div class="promo-card"  data-aos="fade-down" data-aos-anchor-placement="top-center"  data-aos-duration="0">
 
                 <div class="card-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
@@ -1234,6 +1236,11 @@
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
 
   <!-- 

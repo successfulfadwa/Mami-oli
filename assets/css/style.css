@@ -592,6 +592,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   z-index: 1;
   box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(7.079711437225342px);
+  
 }
 
 .promo-card::after {
