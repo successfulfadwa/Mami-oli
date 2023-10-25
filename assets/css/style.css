@@ -273,8 +273,9 @@ color: #777;
     z-index: 99999;
   }
   .food-menu-card:hover .w-100 {
-    transform: perspective(400px) rotateX(50deg) translateY(-2px); /* Apply the 3D perspective effect on hover */
+    transform: perspective(400px) rotateX(40deg) translateY(-2px); /* Apply the 3D perspective effect on hover */
   }
+  
 .w-100 { width: 100%;
   
 
