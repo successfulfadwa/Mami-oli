@@ -769,7 +769,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   justify-content: center;
   gap: 10px;
   margin-block-end: 40px;
-  padding-top: 30git add px;
+  padding-top: 30px;
 
 }
 .h2 .section-title {
@@ -796,6 +796,8 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   background-color: var(--deep-saffron);
   --color: var(--white);
   --border-color: var(--deep-saffron);
+  transform: rotate(55deg); /* Rotate the element by 45 degrees */
+
 }
 
 
