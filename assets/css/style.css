@@ -273,13 +273,27 @@ color: #777;
     z-index: 99999;
   }
   .food-menu-card:hover .w-100 {
-    transform: perspective(400px) rotateX(50deg); /* Apply the 3D perspective effect on hover */
+    transform: perspective(400px) rotateX(50deg) translateY(-2px); /* Apply the 3D perspective effect on hover */
   }
 .w-100 { width: 100%;
   
 
  }
+ /*juices*/
 
+ .w-100j{
+  transition: transform 0.3s ease; /* Add a transition for the transform property */
+  
+  z-index: 99999;
+}
+.food-menu-card:hover .w-100j {
+  transform: perspective(400px) rotateY(-15deg) translateX(10px);
+}
+
+.w-100j { width: 100%;
+
+
+}
 .has-scrollbar {
   display: flex;
   gap: 10px;
