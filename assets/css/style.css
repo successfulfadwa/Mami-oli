@@ -267,9 +267,14 @@ color: #777;
    padding-right: 10px;
    padding-bottom: 20px;
  }
-.img .w-100{
- 
-}
+  .w-100{
+    transition: transform 0.3s ease; /* Add a transition for the transform property */
+    
+    z-index: 99999;
+  }
+  .food-menu-card:hover .w-100 {
+    transform: perspective(400px) rotateX(50deg); /* Apply the 3D perspective effect on hover */
+  }
 .w-100 { width: 100%;
   
 
@@ -820,24 +825,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   display: grid;
   gap: 30px;
 }
-.promo-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 438.001px;
-     
-  background: linear-gradient(93deg, #FFAFB7 -6.36%, #FFD2A6 136.3%);
-  box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(7.079711437225342px);  clip-path: var(--clip-path-1);
-  transform: scaleY(0.001);
-  transform-origin: bottom;
-  z-index: -1;
-  transition: var(--transition-1);
-}
 
-.promo-card:hover::after {
-  clip-path: var(--clip-path-2);
-  transform: scaleY(1);}
 
 .food-menu-card {
   background: var(--goldy, linear-gradient(215deg, rgba(255, 255, 255, 0.51) 8.27%, rgba(255, 255, 255, 0.07) 91.28%, rgba(255, 255, 255, 0.00) 103.71%));
@@ -854,6 +842,25 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   box-shadow: var(--shadow-2);
   transition: transform 0.3s ease; /* Add a transition for the transform property */
 }
+.food-menu-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 438.001px   438.001px  1px  1px;
+     
+  background: var(--goldy, linear-gradient(215deg, rgba(255, 255, 255, 0.51) 8.27%, rgba(255, 255, 255, 0.07) 91.28%, rgba(255, 255, 255, 0.00) 103.71%));
+  box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.079711437225342px);  clip-path: var(--clip-path-1);
+  transform: scaleY(0.001);
+  transform-origin: bottom;
+  z-index: -1;
+  transition: var(--transition-1);}
+
+
+  .food-menu-card:hover::after {
+    clip-path: var(--clip-path-2);
+    transform: scaleY(1);
+  }
 
 .food-menu-card:hover {
   transform: perspective(400px) rotateX(2deg); /* Apply the 3D perspective effect on hover */
@@ -877,20 +884,24 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   left: 0;
 }
 
-.food-menu-btn {
+
+
+
+.food-menu-btn::after {
+  content: "";
   position: absolute;
-  top: calc(50% + 15px);
-  left: 50%;
-  transform: translate(-50%, 0);
-  min-width: max-content;
-  --bg-color: var(--cinnabar);
-  width: 60%;
-  --height: 40px;
-  --padding-inline: 20px;
-  opacity: 0;
+  bottom: -1px;
+  left: 20px;
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, 51%) scale(var(--scale, 1));
+  border-radius: 50%;
+  background-color: #ffe7c9;
+  z-index: -1;
   transition: var(--transition-2);
 }
 
+.btn-hover:is(:hover, :focus)::after { --scale: 500; }
 .food-menu-btn:is(:hover, :focus) { --bg-color: var(--deep-saffron); }
 
 .food-menu-card:is(:hover, :focus-within) .food-menu-btn {
