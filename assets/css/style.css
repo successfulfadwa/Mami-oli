@@ -804,7 +804,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 }
 
 .filter-btn:hover {
-  background-color: var(--deep-saffron);
+  background: linear-gradient(93deg,  #FFD2A6 -6.36%, #FFAFB7 136.3%);
   --color: var(--white);
   --border-color: var(--deep-saffron);
   transform: rotate(5deg); /* Rotate the element slightly on hover */
@@ -816,6 +816,8 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 
 
 .filter-btn.active {
+  background: linear-gradient(93deg,  #FFD2A6 -6.36%, #FFAFB7 136.3%);
+
   background-color: var(--deep-saffron);
   --color: var(--white);
   --border-color: var(--deep-saffron);
@@ -884,30 +886,43 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   left: 0;
 }
 
-
-
-
-.food-menu-btn::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 20px;
-  width: 1px;
-  height: 1px;
-  transform: translate(-50%, 51%) scale(var(--scale, 1));
-  border-radius: 50%;
-  background-color: #ffe7c9;
-  z-index: -1;
+.food-menu-btn {
+  top: calc(50% + 15px);
+  left: 50%;
+ transform: perspective(400px) rotateX(500deg);  min-width: max-content;
+  --bg-color: var(--cinnabar);
+  width: 60%;
+  --height: 40px;
+  --padding-inline: 20px;
+  opacity: 0;
   transition: var(--transition-2);
+  transition: transform 0.35s ease;
+  }
+
+
+.food-menu-btn :hover {
+
+  background-color: #ffe7c9;
+
 }
 
-.btn-hover:is(:hover, :focus)::after { --scale: 500; }
-.food-menu-btn:is(:hover, :focus) { --bg-color: var(--deep-saffron); }
+
+
+
+/*    transition: transform 0.3s ease; 
+    
+z-index: 99999;
+}
+.food-menu-card:hover .w-100 {
+  transform: perspective(400px) rotateX(50deg);   */
 
 .food-menu-card:is(:hover, :focus-within) .food-menu-btn {
   transform: translate(-50%, -50%);
   opacity: 1;
+  background-color: #ffe7c9;
+
 }
+
 
 .food-menu-card .wrapper {
   display: flex;
