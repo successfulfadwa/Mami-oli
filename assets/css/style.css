@@ -2045,11 +2045,13 @@ textarea.input-field {
 .group {
   text-align: center;
   white-space: nowrap;
+  overflow: hidden;
   
 }
 
+/* Default styles for .item */
 .item {
-  width: 8vw;
+  width: 4vw;
   height: 75vh;
   background-position: center;
   background-size: 75vh;
@@ -2057,4 +2059,11 @@ textarea.input-field {
   border-radius: 3vw;
   display: inline-block;
   cursor: pointer;
+}
+
+/* Media query for phones (adjust the max-width value as needed) */
+@media (max-width: 767px) {
+  .item {
+    width: 8vw; /* Set the width to 8vw for phones */
+  }
 }
