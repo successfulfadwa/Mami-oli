@@ -289,6 +289,7 @@ color: #777;
 }
 .food-menu-card:hover .w-100j {
   transform: perspective(400px) rotateY(-15deg) translateX(10px);
+  
 }
 
 .w-100j { width: 100%;
