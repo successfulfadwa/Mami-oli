@@ -12,9 +12,9 @@ const expand = (item, i) => {
 /*phone*/ 
 	if (window.innerWidth < 768) {
 		gsap.to(items, {
-		  width: item.clicked ?  '12vw' : '8vw',
+		  width: item.clicked ?  '12vw' : 'vw',
 		  duration: 2.5,
-		  ease: 'elastic(1, .3)'
+		  ease: 'elastic(1, .6)'
 		});
 	  }
 	  
@@ -22,13 +22,13 @@ const expand = (item, i) => {
   gsap.to(item, {
     width: item.clicked ? '22vw' : '5.9vw',
     duration: 2.5,
-    ease: 'elastic(1, .3)' });
+    ease: 'elastic(1, .6)' });
 	/*phone*/
 	if (window.innerWidth < 768) {
 		gsap.to(item, {
 		  width: item.clicked ? '55vw' : '10vw',
 		  duration: 2.5,
-		  ease: 'elastic(1, .3)'
+		  ease: 'elastic(1, .6)'
 		});
 	  }
 
