@@ -278,7 +278,7 @@ color: #777;
     filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1)); /* Use the rgba color equivalent of #C2C2C2 */
 
   }
-  
+
 .w-100 { width: 100%;
   
 
@@ -2040,4 +2040,21 @@ textarea.input-field {
 
   .footer-top .container { grid-template-columns: 1.4fr 1fr 1fr 1.6fr; }
 
+}
+/*gallery*/
+.group {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item {
+  width: 15vw;
+  height: 75vh;
+  background-position: center;
+  background-size: 75vh;
+  margin: 1vw;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
 }
