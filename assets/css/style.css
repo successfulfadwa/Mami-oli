@@ -2061,12 +2061,11 @@ textarea.input-field {
   width: 4vw;
   height: 75vh;
   background-position: center;
-  background-size: 75vh;
-  margin: 1vw;
+  background-size: auto 100%; /* Auto width and 100% height, maintaining aspect ratio */  margin: 1vw;
   border-radius: 25vw  25vw 5vw 5vw;
   display: inline-block;
   cursor: pointer;
-  
+  object-fit: cover;  
 }
 
 /* Media query for phones (adjust the max-width value as needed) */
