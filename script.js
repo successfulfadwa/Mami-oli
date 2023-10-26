@@ -5,17 +5,40 @@ const expand = (item, i) => {
     if (i === ind) return;
     it.clicked = false;
   });
-  gsap.to(items, {
-    width: item.clicked ? '15vw' : '8vw',
-    duration: 2,
-    ease: 'elastic(1, .6)' });
-
-
   item.clicked = !item.clicked;
   gsap.to(item, {
-    width: item.clicked ? '42vw' : '15vw',
-    duration: 2.5,
-    ease: 'elastic(1, .3)' });
+	width: item.clicked ? '42vw' : '8vw',
+	duration: 2.5,
+	ease: 'elastic(1, .3)'
+  });
+  
+  // Check for phone view
+  if (window.innerWidth < 768) {
+	gsap.to(items, {
+	  width: item.clicked ? '22vw' : '8vw',
+	  duration: 2.5,
+	  ease: 'elastic(1, .3)'
+	});
+  }
+  
+
+
+	item.clicked = !item.clicked;
+	gsap.to(item, {
+	  width: item.clicked ? '22vw' : '8vw',
+	  duration: 2.5,
+	  ease: 'elastic(1, .3)'
+	});
+	
+	// Check for phone view
+	if (window.innerWidth < 768) {
+	  gsap.to(item, {
+		width: item.clicked ? '70vw' : '9vw',
+		duration: 2.5,
+		ease: 'elastic(1, .3)'
+	  });
+	}
+	
 
 };
 
