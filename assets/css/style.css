@@ -1018,17 +1018,28 @@ z-index: 99999;
   letter-spacing: -2px;
   max-width: 17ch;
   font-size: 60px;
+
   white-space: nowrap;
+}
+.cta .section-title .span {
+  background: linear-gradient(123deg, #FFF -50.54%, #FFA077 88.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
 /*phone image animation moving text */
 @media screen and (max-width: 767px) {
   .cta .section-title {
-    color: var(--white);
-    line-height: 1.5;
+    line-height: 1.1;
     letter-spacing: -2px;
     max-width: 17ch;
     font-size: 50px; /* Adjust the font size for phone screens */
     white-space: nowrap;
+    margin-bottom: 5px;
   }
 }
 
