@@ -68,25 +68,40 @@ for (let i = 0; i < searchBoxElems.length; i++) {
  */
 
 const deliveryBoy = document.querySelector("[data-delivery-boy]");
-
-let deliveryBoyMove = -80;
+let deliveryBoyMove = -40;
 let lastScrollPos = 0;
 
-window.addEventListener("scroll", function () {
-
+function animateDeliveryBoy() {
   let deliveryBoyTopPos = deliveryBoy.getBoundingClientRect().top;
 
   if (deliveryBoyTopPos < 500 && deliveryBoyTopPos > -250) {
     let activeScrollPos = window.scrollY;
 
     if (lastScrollPos < activeScrollPos) {
-      deliveryBoyMove += 1;
+      deliveryBoyMove += 7;
     } else {
-      deliveryBoyMove -= 1;
+      deliveryBoyMove -= 7;
     }
 
     lastScrollPos = activeScrollPos;
+    deliveryBoy.style.transition = 'transform 0.3s ease'; // Adjust the duration and timing function as needed
     deliveryBoy.style.transform = `translateX(${deliveryBoyMove}px)`;
   }
+}
 
-});
+function throttle(func, limit) {
+  let inThrottle;
+  return function () {
+    const args = arguments;
+    const context = this;
+    if (!inThrottle) {
+      func.apply(context, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+const throttledAnimate = throttle(animateDeliveryBoy, 16);
+
+window.addEventListener("scroll", throttledAnimate);
