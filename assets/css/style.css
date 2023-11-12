@@ -27,7 +27,7 @@
   --champagne-pink:#FFCAAA;
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
-  --deep-saffron: hsl(32, 100%, 59%);
+  --deep-saffron: linear-gradient(123deg, #ff9d2e -50.54%, #ff9d2e 88.34%);
   --dark-orange: hsl(28, 100%, 58%);
   --desert-sand: hsl(23, 49%, 82%);
   --isabelline: hwb(40 94% 2%);
@@ -336,6 +336,14 @@ color: #777;
 .section-title > .span {
   display: inline-block;
   color: var(--deep-saffron);
+    background: linear-gradient(123deg, #ff9d2e -50.54%, #ff9d2e 88.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
 
 .abs-img {
@@ -606,9 +614,17 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 }
 
 .hero-title {
-  color: var(--champagne-pink);
   max-width: 12ch;
+  font-weight: 50;
   margin-inline: auto;
+  background: linear-gradient(123deg, #FFF -50.54%, #FFA077 88.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
 
 .hero-text {
@@ -839,6 +855,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
   --border-color: var(--deep-saffron);
   transform: rotate(5deg); /* Rotate the element slightly on hover */
   transition: 0.3s all ease-in-out;
+  
 
 }
 
@@ -985,7 +1002,11 @@ z-index: 99999;
   padding-inline-end: 5px;
 }
 
-.food-menu-card .price { color: var(--deep-saffron); }
+.food-menu-card .price { color: var(--deep-saffron); background: var(--deep-saffron);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5); }
 
 .food-menu-card .del { color: var(--gray-x-11-gray); }
 
@@ -1305,7 +1326,11 @@ z-index: 99999;
 }
 
 .blog-card .card-meta-link:is(:hover, :focus) .meta-info {
-  color: var(--deep-saffron);
+  color: var(--deep-saffron) ; background: var(--deep-saffron);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
 }
 
 .blog-card .card-title {
@@ -1331,6 +1356,11 @@ z-index: 99999;
 
 .blog-card .btn-link:is(:hover, :focus) {
   color: var(--deep-saffron);
+  background: var(--deep-saffron);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
   gap: 10px;
 }
 
@@ -1413,6 +1443,12 @@ z-index: 99999;
   left: calc(100% + 15px);
   background-color: var(--deep-saffron);
   width: 40px;
+  background: var(--deep-saffron);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  
   height: 4px;
   border-inline-end: 5px solid var(--deep-saffron);
   box-shadow: inset -5px 0 0 var(--white);
@@ -1922,7 +1958,7 @@ textarea.input-field {
 
   .hero-title {
     --fs-1: 7rem;
-    letter-spacing: -2.5px;
+    font-weight: 700;
   }
 
   .hero-text { font-size: var(--fs-3); }
