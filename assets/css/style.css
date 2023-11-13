@@ -1380,7 +1380,7 @@ z-index: 99999;
   #FOOTER
 \*-----------------------------------*/
 
-.footer { overflow: hidden; }
+.footer { overflow: hidden;padding-top: 50px; }
 
 .footer-top {
   position: relative;
@@ -1467,9 +1467,16 @@ z-index: 99999;
 .footer-list address { max-width: 20ch; }
 
 .footer-form {
-  background-color: var(--white);
-  padding: 30px;
-  border: 1px solid var(--cultured);
+  top: 1000px;
+  background: var(--goldy, linear-gradient(215deg, rgba(255, 255, 255, 0.51) 8.27%, rgba(255, 255, 255, 0.07) 91.28%, rgba(255, 255, 255, 0.00) 103.71%));
+  
+  border-radius: 198px 198px 198px 33px;
+  -webkit-border-radius: 198px 198px 198px 33px;
+  -moz-border-radius: 198px 198px 198px 33px;
+  
+  box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.079711437225342px);
+  padding: 40px;
   box-shadow: var(--shadow-2);
 }
 
