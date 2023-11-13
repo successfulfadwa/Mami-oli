@@ -1392,7 +1392,7 @@ z-index: 99999;
 }
 
 .footer-top::after {
-  content: url(https://svgur.com/i/zcv.svg);
+  content: url(../images/delivery-girl2.png);
   position: absolute;
   bottom: -19px;
   left: -160px;
