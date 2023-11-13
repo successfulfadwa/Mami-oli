@@ -1392,11 +1392,12 @@ z-index: 99999;
 }
 
 .footer-top::after {
-  content: url(../images/delivery-boy.svg);
+  content: url(https://svgur.com/i/zcv.svg);
   position: absolute;
-  bottom: -11px;
+  bottom: -19px;
   left: -160px;
-  width: 160px;
+  width: 150px !important;
+  
   animation: running-cycle 20s linear infinite;
 }
 
