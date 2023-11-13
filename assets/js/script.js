@@ -78,9 +78,9 @@ function animateDeliveryBoy() {
     let activeScrollPos = window.scrollY;
 
     if (lastScrollPos < activeScrollPos) {
-      deliveryBoyMove += 7;
+      deliveryBoyMove += 9;
     } else {
-      deliveryBoyMove -= 7;
+      deliveryBoyMove -= 8;
     }
 
     lastScrollPos = activeScrollPos;

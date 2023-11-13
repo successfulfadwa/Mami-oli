@@ -380,7 +380,7 @@ color: #777;
 .rating-wrapper {
   display: flex;
   gap: 5px;
-  color: var(--deep-saffron);
+  color:#ff9d2e;
 }
 
 
@@ -782,7 +782,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 .about-item:not(:last-child) { margin-block-end: 10px; }
 
 .about-item ion-icon {
-  background-color: var(--deep-saffron);
+  background-color: #ff9d2e;
   color: var(--white);
   font-size: 1.2rem;
   padding: 4px;
@@ -1134,11 +1134,18 @@ z-index: 99999;
 }
 
 .testi-card {
-  background-color: var(--white);
-  padding: 40px;
   text-align: left;
+  background: var(--goldy, linear-gradient(215deg, rgba(255, 255, 255, 0.51) 8.27%, rgba(255, 255, 255, 0.07) 91.28%, rgba(255, 255, 255, 0.00) 103.71%));
+  z-index: 1;
+  border-radius: 198px 198px 198px 33px;
+  -webkit-border-radius: 198px 198px 198px 33px;
+  -moz-border-radius: 198px 198px 198px 33px;
+  
+  box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.079711437225342px);
+  padding: 40px;
   box-shadow: var(--shadow-2);
-}
+ }
 
 .testi-card .profile-wrapper {
   display: flex;
@@ -1154,16 +1161,16 @@ z-index: 99999;
 
 .testi-card .testi-name { margin-block-end: 2px; }
 
-.testi-card .testi-title {
-  font-family: var(--ff-rubik);
-  font-size: var(--fs-4);
-}
+
 
 .testi-card .testi-text { margin-block: 20px 15px; }
 
 .testi-item {
   min-width: 100%;
   scroll-snap-align: start;
+  padding: 20px  5px  20px  5px ;
+  
+
 }
 
 
