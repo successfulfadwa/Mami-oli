@@ -202,6 +202,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
                   class="w-100 card-banner">
 
               </div>
+              
             </li>
 </a>
             <a href="#drinks">  <li class="promo-item">
@@ -384,8 +385,9 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
                     alt="Fried Chicken Unlimited" class="w-100">
 
                   <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn" onclick="window.location.href='https://codepen.io/pen'">Order Now</button>
+                  <a href="https://wa.me/+18178068944?text=Hi, I'd like to order Costilla De Puerco
+                  from Mami Oli. Thanks" target="_blank">
+                  <button class="btn food-menu-btn" >Order Now</button> </a>
                 </div>
 
                 <div class="wrapper">
@@ -426,7 +428,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
                
                   <div class="badge">-10%</div>
 
-                  <button class="btn food-menu-btn">Order Now</button>
+                  <button class="btn food-menu-btn"  href="https://wa.me/+18178068944?text=Hi, I'd like to order Tacos from Mami Oli. Thanks" target="_blank" >Order Now</button>
                 </div>
 
                 <div class="wrapper">
@@ -465,7 +467,8 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
 
                   <div class="badge">-25%</div>
 
-                  <button class="btn food-menu-btn">Order Now</button>
+                  <button class="btn food-menu-btn"   href="https://wa.me/+18178068944?text=Hi, I'd like to order Tamales
+                  from Mami Oli. Thanks" target="_blank" >Order Now</button>
                 </div>
 
                 <div class="wrapper">
@@ -504,7 +507,8 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
 
                   <div class="badge">-20%</div>
 
-                  <button class="btn food-menu-btn">Order Now</button>
+                  <button class="btn food-menu-btn"  href="https://wa.me/+18178068944?text=Hi, I'd like to order Flautas
+                  from Mami Oli. Thanks" target="_blank">Order Now</button>
                 </div>
 
                 <div class="wrapper">
@@ -1001,16 +1005,13 @@ Mami Oli passionately shares her family's culinary heritage through delectable M
                 const bookingDateTime = document.querySelector('input[name="booking_datetime"]').value;
                 const message = document.querySelector('textarea[name="message"]').value;
             
-                // Create WhatsApp message with form values
                 const whatsappMessage = `Hi, I'd like to book a meal!\n\nName: ${fullName}\nPhone Number: ${phoneNumber}\nTotal Persons: ${totalPerson}\nBooking Date & Time: ${bookingDateTime}\nMessage: ${message}`;
             
                 // Encode the message for the URL
                 const encodedMessage = encodeURIComponent(whatsappMessage);
             
-                // Construct the WhatsApp link with the encoded message
                 const whatsappLink = `https://wa.me/+18178068944?text=${encodedMessage}`;
             
-                // Open the WhatsApp link in a new tab
                 window.open(whatsappLink, "_blank");
               }
             </script>
