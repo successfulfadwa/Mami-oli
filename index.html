@@ -992,24 +992,25 @@ Mami Oli passionately shares her family's culinary heritage through delectable M
               </li>
     
             </ul>
-    
             <script>
               function openFormWhatsApp() {
                 // Retrieve form values
                 const fullName = document.querySelector('input[name="full_name"]').value;
-                const emailAddress = document.querySelector('input[name="email_address"]').value;
+                const phoneNumber = document.querySelector('input[name="phone_number"]').value;
                 const totalPerson = document.querySelector('select[name="total_person"]').value;
-                const bookingDate = document.querySelector('input[name="booking_date"]').value;
+                const bookingDateTime = document.querySelector('input[name="booking_datetime"]').value;
                 const message = document.querySelector('textarea[name="message"]').value;
             
-                const whatsappMessage = `Hi, I'd like to book a meal!\n\nName: ${fullName}\nEmail: ${emailAddress}\nTotal Persons: ${totalPerson}\nBooking Date: ${bookingDate}\nMessage: ${message}`;
+                // Create WhatsApp message with form values
+                const whatsappMessage = `Hi, I'd like to book a meal!\n\nName: ${fullName}\nPhone Number: ${phoneNumber}\nTotal Persons: ${totalPerson}\nBooking Date & Time: ${bookingDateTime}\nMessage: ${message}`;
             
                 // Encode the message for the URL
                 const encodedMessage = encodeURIComponent(whatsappMessage);
             
-                // Construct the WhatsApp link  encoded message
+                // Construct the WhatsApp link with the encoded message
                 const whatsappLink = `https://wa.me/+18178068944?text=${encodedMessage}`;
             
+                // Open the WhatsApp link in a new tab
                 window.open(whatsappLink, "_blank");
               }
             </script>
@@ -1023,7 +1024,7 @@ Mami Oli passionately shares her family's culinary heritage through delectable M
                 <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
                   class="input-field">
             
-                <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
+                <input type="tel" name="phone_number" required placeholder="Phone Number" aria-label="Phone Number"
                   class="input-field">
             
               </div>
@@ -1038,7 +1039,7 @@ Mami Oli passionately shares her family's culinary heritage through delectable M
                   <option value="5 person">5 Person</option>
                 </select>
             
-                <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
+                <input type="datetime-local" name="booking_datetime" aria-label="Reservation date & time" class="input-field">
             
               </div>
             
