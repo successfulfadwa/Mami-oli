@@ -138,10 +138,15 @@
       <!-- 
         - #HERO
       -->
+      
 
       <section class="hero" id="home" s>
         <div class="container">
-
+          <script>
+            function openWhatsApp() {
+              window.open("https://wa.me/+18178068944?text=Hi, I'd like to order food from Mami Oli. Thanks", "_blank");
+            }
+          </script>
           <div class="hero-content">
 
             <p class="hero-subtitle" > Sleep And Eat</p>
@@ -150,7 +155,7 @@
 
             <p class="hero-text">There's Nothing a Slice of Mami Oli food Can't Solve!!</p>
 
-            <button class="btn">Get Your Meal ...NOW</button>
+            <button class="btn"onclick="openWhatsApp()" >Get Your Meal ...NOW</button>
 
           </div>
 
@@ -178,7 +183,7 @@
           <a href="#meals">
           <ul class="promo-list has-scrollbar">
 
-            <li class="promo-item">
+            <li class="promo-item" >
               <div class="promo-card"  data-aos="fade-down" data-aos-anchor-placement="top-center"  data-aos-anchor="#example-anchor"
      data-aos-offset="500"
      data-aos-duration="300">
@@ -188,7 +193,7 @@
                   aspect-ratio: 1 / 1;">
                 </div>
 
-                <h3 class="h3 card-title"href="#meals">Maxican Meals</h3>
+                <h3 class="h3 card-title" >Maxican Meals</h3>
 
                 <p class;=";card-text">
 Discover the taste of our Mexican meals  -    try them now for a truly  tasty experience!    </p>
@@ -199,7 +204,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
               </div>
             </li>
 </a>
-            <a href="#">  <li class="promo-item">
+            <a href="#drinks">  <li class="promo-item">
               <div class="promo-card"   data-aos="fade-down" data-aos-anchor-placement="top-center"  data-aos-anchor="#example-anchor"
               data-aos-offset="700"
               data-aos-duration="1100">
@@ -211,7 +216,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
                 
                 </div>
 
-                <h3 class="h3 card-title"   href="#drinks">Esta Deleciouso Drinks</h3>
+                <h3 class="h3 card-title"  >Esta Deleciouso Drinks</h3>
 
                 <p class="card-text">
                   Don't enjoy a meal without our delightful and tasty drink!
@@ -223,7 +228,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
               </div>
             </li>
             </a>
-            <a href="#">
+            <a href="#Sweets">
             <li class="promo-item">
               <div class="promo-card" data-aos="fade-down" data-aos-anchor-placement="top-center"  data-aos-anchor="#example-anchor"
               data-aos-offset="900"
@@ -606,7 +611,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
 
               </div>
             </li>
-            <li  id="drinks">
+            <li  id="drinks" href="#drinks">
               <div class="food-menu-card"  >
 
                 <div class="card-banner">
