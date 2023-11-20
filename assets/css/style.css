@@ -169,7 +169,7 @@ body.active { overflow: hidden; }
 
 ::-webkit-scrollbar-track { background-color: var(--cultured); }
 
-::-webkit-scrollbar-thumb { background-color: var(--deep-saffron); }
+::-webkit-scrollbar-thumb { background-color:  #ff9d2e; }
 
 ::-webkit-scrollbar-thumb:hover { background-color: var(--tangerine); }
 
@@ -324,12 +324,12 @@ color: #777;
 .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 40px); }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  outline: 2px solid var(--deep-saffron);
+  outline: 2px solid #ff9d2e;
   border-radius: 50px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  border: 3px solid var(--cultured);
+  border: 3px solid  #ff9d2e;
   border-radius: 50px;
 }
 
@@ -1546,7 +1546,7 @@ textarea.input-field {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--deep-saffron);
+  background-color:  #ff9d2e;
   color: var(--white);
   padding: 15px;
   border-radius: 50%;
