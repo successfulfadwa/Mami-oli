@@ -303,13 +303,13 @@ color: #777;
 
  .food-menu-card .w-100j {
   transform: perspective(400px) rotateY(0deg) translateX(0);
-  filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1)); /* Use the rgba color equivalent of #C2C2C2 */
-  transition: transform 0.3s ease, filter 0.3s ease; /* Add a smooth transition */
+  filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1));
+  transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .food-menu-card:hover .w-100j {
   transform: perspective(400px) rotateY(-15deg) translateX(10px);
-  filter: drop-shadow(10px 8px 17px rgba(195, 195, 195, 1)); /* Use the same shadow for the hover state */
+  filter: drop-shadow(10px 8px 17px rgba(195, 195, 195, 1)); 
 }
 
 
@@ -705,7 +705,8 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 .promo-card .card-text {
   margin-block-end: 15px;
   transition: var(--transition-1);
-}
+  width: 300px; /* Fixed width for the inner div */
+height: 40px;}
 
 .promo-card .card-banner {
   max-width: 290px;
