@@ -356,6 +356,7 @@ color: #777;
 .abs-img {
   position: absolute;
   transform: scale(1);
+  
 }
 .scale-up-anim1 {
   left: 0px;
@@ -765,9 +766,10 @@ height: 40px;}
   
 }
 
-.about-banner .abs-img {
-  top:-70px;
-  left: -10px;
+ .abs-img {
+  top:50px;
+  left: 147px;
+  z-index: 1;
 
 }
 
