@@ -622,7 +622,8 @@ border: 1px solid rgba(255, 255, 255, 0.09);  box-shadow: var(--shadow-1);
 
 .hero-title {
   max-width: 12ch;
-  font-weight: 50;
+  font-weight: 900;
+  
   margin-inline: auto;
   background: linear-gradient(123deg, #FFF -50.54%, #FFA077 88.34%);
   background-clip: text;
@@ -1628,7 +1629,7 @@ textarea.input-field {
    * HERO
    */
 
-  .hero-title { --fs-1: 4.2rem; }
+  .hero-title { --fs-1: 5rem; font-weight: 700; }
 
 
 
