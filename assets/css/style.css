@@ -771,7 +771,20 @@ height: 40px;}
   left: -10px;
 
 }
+@media screen and (max-width: 767px)
+ {
+  .about-banner .abs-img {
+    top: -55px;
+    left: -10px;
+    /* Styles for phones */
+  }
+  .w-100.about-img {
+    /* Your styles here */
+  padding-top: 70px;
 
+  }
+  
+ }
 
 
 .about .section-title {
