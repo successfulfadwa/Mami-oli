@@ -310,9 +310,8 @@ color: #777;
 height: auto;
  } 
 
- .w-100FIX { width: auto;
+ .w-100FIX { 
   
-  height: auto; 
     }
  /*juices*/
 
@@ -778,7 +777,7 @@ height: 40px;}
 .about-img {
   max-width: max-content;
   margin-inline: auto;
-  width: 100%;
+  
 }
 
 .about-banner .abs-img {
@@ -793,7 +792,7 @@ height: 40px;}
     left: -10px;
     /* Styles for phones */
   }
-  .w-100.about-img {
+  .w-100fix.about-img {
     /* Your styles here */
   padding-top: 70px;
 
