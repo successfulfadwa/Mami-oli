@@ -395,10 +395,10 @@ color: #777;
 .mami-oli {
   display: none; /* Hide the element by default */
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the element */
-  width: 248px;
+  width: 200px;
   height: auto;
 }
 
