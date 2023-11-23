@@ -342,12 +342,21 @@ color: #777;
 }
 /* This CSS positions the text over the image */
 .mami-oli {
+  display: none; /* Hide the element by default */
   position: absolute;
   text-align: center;
-  top: 50%; /* Adjust the top position as needed */
-  left: 30%; /* Adjust the left position as needed */
-max-width: 150px;
+  top: 50%;
+  left: -25px;
+  max-width: 150px;
 }
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .mami-oli {
+    display: block; /* Show the element on mobile */
+  }
+}
+
 
 .section-title > .span {
   display: inline-block;
