@@ -347,7 +347,8 @@ color: #777;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the element */
-  max-width: auto;
+  max-width: 200px;
+  height: 100px;
 }
 
 /* Media query for mobile devices */
