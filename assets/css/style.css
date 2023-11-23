@@ -311,7 +311,6 @@ color: #777;
   
 height: auto;
  }
-
  /*juices*/
 
  .food-menu-card .w-100j {
@@ -791,7 +790,11 @@ height: 40px;}
     left: -10px;
     /* Styles for phones */
   }
+  .w-100.about-img {
+    /* Your styles here */
+  padding-top: 70px;
 
+  }
   
  }
 
