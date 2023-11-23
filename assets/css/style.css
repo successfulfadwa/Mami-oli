@@ -289,11 +289,14 @@ color: #777;
 
     z-index: 99999;
   }
-  .food-menu-card:hover .w-100 {
-    transform: perspective(400px) rotateX(40deg) translateY(-2px); /* Apply the 3D perspective effect on hover */
-    filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1)); /* Use the rgba color equivalent of #C2C2C2 */
-
+  .food-menu-card:active .w-100,
+  .food-menu-card:focus .w-100 {
+    -webkit-transform: perspective(400px) rotateX(40deg) translateY(-2px);
+    transform: perspective(400px) rotateX(40deg) translateY(-2px);
+    -webkit-filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1));
+    filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1));
   }
+  
 
 .w-100 { width: 100%;
   
