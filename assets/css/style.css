@@ -398,7 +398,7 @@ color: #777;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the element */
-  width: 250px;
+  width: 248px;
   height: auto;
 }
 
