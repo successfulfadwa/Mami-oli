@@ -283,15 +283,23 @@ color: #777;
    padding-right: 10px;
    padding-bottom: 20px;
  }
- .w-100 {
-  transition: transform 0.3s ease, filter 0.5s ease;
-  filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25));
-}
+  .w-100{
+    transition: transform 0.3s ease, filter 0.5s ease; /* Add a transition for the transform property */
+    filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25));
 
-.clicked {
-  transform: perspective(400px) rotateX(40deg) translateY(-2px);
-  filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1));
-}
+    z-index: 99999;
+  }
+  .food-menu-card:hover .w-100 {
+    transform: perspective(400px) rotateX(40deg) translateY(-2px); /* Apply the 3D perspective effect on hover */
+    filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1)); /* Use the rgba color equivalent of #C2C2C2 */
+
+  }
+
+.w-100 { width: 100%;
+  
+
+ }
+ /*juices*/
 
  .food-menu-card .w-100j {
   transform: perspective(400px) rotateY(0deg) translateX(0);
