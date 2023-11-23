@@ -283,33 +283,21 @@ color: #777;
    padding-right: 10px;
    padding-bottom: 20px;
  }
- .w-100 {
-  -webkit-transition: -webkit-transform 0.3s ease, filter 0.5s ease; /* WebKit transition for transform and filter */
-  transition: transform 0.3s ease, filter 0.5s ease; /* Standard transition */
-  -webkit-filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25)); /* WebKit prefix for filter */
-  filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25));
-  z-index: 99999;
-  transform-origin: center;
-  -webkit-transform-origin: center;
-  /* Other styles for this class */
-}
+  .w-100{
+    transition: transform 0.3s ease, filter 0.5s ease; /* Add a transition for the transform property */
+    filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25));
 
+    z-index: 99999;
+  }
+  .food-menu-card:hover .w-100 {
+    transform: perspective(400px) rotateX(40deg) translateY(-2px); /* Apply the 3D perspective effect on hover */
+    filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1)); /* Use the rgba color equivalent of #C2C2C2 */
 
-  .food-menu-card:hover .w-100,
-  .food-menu-card:active .w-100,
-  .food-menu-card:focus .w-100 {
-    -webkit-transform: perspective(400px) rotateX(40deg) translateY(-2px);
-    transform: perspective(400px) rotateX(40deg) translateY(-2px);
-    -webkit-filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1));
-    filter: drop-shadow(-5px 11px 15px rgba(194, 194, 194, 1));
-    transform-origin: center;
-    -webkit-transform-origin: center;
   }
 
-
-.w-100 { width: auto;
+.w-100 { width: 100%;
   
-height: auto;
+
  }
  /*juices*/
 
