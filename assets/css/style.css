@@ -289,6 +289,7 @@ color: #777;
 
     z-index: 99999;
   }
+  .food-menu-card:hover .w-100,
   .food-menu-card:active .w-100,
   .food-menu-card:focus .w-100 {
     -webkit-transform: perspective(400px) rotateX(40deg) translateY(-2px);
