@@ -381,8 +381,7 @@ Discover the taste of our Mexican meals  -    try them now for a truly  tasty ex
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/food-menu-1.png" width="300" height="300" loading="lazy"
-                    alt="Fried Chicken Unlimited" class="w-100">
+                  <img src="./assets/images/food-menu-1.png" width="300" height="300" loading="lazy" alt="Fried Chicken Unlimited" class="w-100 clickable">
 
                   <div class="badge">-15%</div>
                   <a href="https://wa.me/+18178068944?text=Hi, I'd like to order Costilla De Puerco
@@ -1096,7 +1095,14 @@ Mami Oli passionately shares her family's culinary heritage through delectable M
   </a>
 
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.clickable').on('click', function() {
+        $(this).toggleClass('clicked');
+      });
+    });
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
