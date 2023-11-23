@@ -118,7 +118,7 @@ input,
 select,
 button,
 textarea,
-ion-icon {  }
+ion-icon { display: block; }
 
 img { height: auto; }
 
