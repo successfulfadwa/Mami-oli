@@ -778,7 +778,7 @@ height: 40px;}
 .about-img {
   max-width: max-content;
   margin-inline: auto;
-  
+  width: 100%;
 }
 
 .about-banner .abs-img {
