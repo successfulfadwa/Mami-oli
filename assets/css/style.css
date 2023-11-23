@@ -308,12 +308,8 @@ color: #777;
 .w-100 { width: AUTO;
   
 height: auto;
- } 
-
- .w-100FIX { width: AUTO;
-  
-  height: auto; 
-    }
+ }
+ 
  /*juices*/
 
  .food-menu-card .w-100j {
