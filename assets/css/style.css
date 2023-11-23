@@ -285,10 +285,12 @@ color: #777;
  }
  .w-100 {
   -webkit-transition: -webkit-transform 0.3s ease, filter 0.5s ease; /* WebKit transition for transform and filter */
+  transition: transform 0.3s ease, filter 0.5s ease; /* Standard transition */
   -webkit-filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25)); /* WebKit prefix for filter */
   filter: drop-shadow(-5px -15px 20px rgba(194, 194, 194, 0.25));
   z-index: 99999;
-
+  transform-origin: center;
+  -webkit-transform-origin: center;
   /* Other styles for this class */
 }
 
@@ -303,16 +305,12 @@ color: #777;
     transform-origin: center;
     -webkit-transform-origin: center;
   }
-  
 
-.w-100 { width: AUTO;
+
+.w-100 { width: auto;
   
 height: auto;
  }
- .w-100fix { width: AUTO;
-  
-  height: auto;
-   }
  /*juices*/
 
  .food-menu-card .w-100j {
