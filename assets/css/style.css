@@ -344,18 +344,9 @@ color: #777;
 .mami-oli {
   position: absolute;
   text-align: center;
-  font-weight: 900;
-  font-size: 30px;
   top: 50%; /* Adjust the top position as needed */
   left: 30%; /* Adjust the left position as needed */
-  background: linear-gradient(123deg, #FFF -50.54%, #FFA077 88.34%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
-  -webkit-background-clip: text;
-     -moz-background-clip: text;
-          background-clip: text;
+max-width: 150px;
 }
 
 .section-title > .span {
