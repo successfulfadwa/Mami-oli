@@ -171,7 +171,8 @@ body.active { overflow: hidden; }
       box-shadow: 0px 0.1752px 1.3799px 0px rgba(69, 42, 124, 0.10), 0px 1px 1px 0px rgba(0, 0, 0, 0.25) inset;
  }
 
-::-webkit-scrollbar-thumb {
+::-webkit-
+-thumb {
   background-image: linear-gradient(93deg, #FFAFB7 -6.36%, #FFD2A6 136.3%);
   border-radius: 50px;
   box-shadow: 0px 0.1752px 1.3799px 0px rgba(69, 42, 124, 0.10), 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
@@ -338,6 +339,23 @@ color: #777;
 .has-scrollbar::-webkit-scrollbar-thumb {
   border: 0.57px solid  #FFD2A6;
   border-radius: 50px;
+}
+/* This CSS positions the text over the image */
+.mami-oli {
+  position: absolute;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  top: 50%; /* Adjust the top position as needed */
+  left: 30%; /* Adjust the left position as needed */
+  background: linear-gradient(123deg, #FFF -50.54%, #FFA077 88.34%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
 }
 
 .section-title > .span {
@@ -1435,7 +1453,7 @@ z-index: 99999;
 }
 
 .footer .logo {
-  color: var(--rich-black-fogra-29);
+  color: #352e2e ;
   font-size: 3.2rem;
 }
 
@@ -1533,7 +1551,7 @@ z-index: 99999;
    box-shadow: -0.18927px -0.18927px 1.18296px 0px #FFE9D6, 0px 4px 2px 0px rgba(255, 140, 140, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);backdrop-filter: blur(1.6602835655212402px);  box-shadow: var(--shadow-2);
 background: linear-gradient(146deg, rgba(255, 255, 255, 0.31) 6.18%, rgba(255, 237, 240, 0.50) 90.01%);
 outline: none;
-
+text-indent: 4px;
 
   
 } 
@@ -1543,7 +1561,21 @@ outline: none;
 
 }
 
-.input-field::placeholder { color: var(--spanish-gray); }
+.input-field::placeholder { color: var(--spanish-gray);text-indent: 2px; 
+}
+
+.input-field.indent:focus{ color: var(--spanish-gray);text-indent: 10px;
+ /* Adjust the value as needed */
+ line-height: 2.5; /* Adjust the line height as needed */
+
+
+}
+.input-field.indent::placeholder { color: var(--spanish-gray);text-indent: 10px;
+ /* Adjust the value as needed */
+ line-height: 2.5; /* Adjust the line height as needed */
+
+
+}
 
 .input-field::-webkit-calendar-picker-indicator { opacity: 0.5; }
 
