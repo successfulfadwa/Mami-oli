@@ -309,8 +309,8 @@ color: #777;
   
 height: auto;
  } 
- 
- .w-100FIX { width: 100%;
+
+ .w-100FIX { width: auto;
   
   height: auto; 
     }
