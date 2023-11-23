@@ -310,8 +310,9 @@ color: #777;
 height: auto;
  } 
 
- .w-100FIX { 
+ .w-100FIX { width: AUTO;
   
+  height: auto; 
     }
  /*juices*/
 
@@ -774,14 +775,12 @@ height: 40px;}
   aspect-ratio: 1 / 0.9;
 }
 
-.about-imgfix {
+.about-img {
+  max-width: max-content;
   margin-inline: auto;
   
 }
-.img.w-100fix.about-imgfix{
-  top: 500px;
-  padding-top: 50px;
- }
+
 .about-banner .abs-img {
   top:-70px;
   left: -10px;
@@ -794,7 +793,7 @@ height: 40px;}
     left: -10px;
     /* Styles for phones */
   }
-  .w-100fix.about-imgfix {
+  .w-100.about-img {
     /* Your styles here */
   padding-top: 70px;
 
