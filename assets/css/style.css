@@ -867,8 +867,11 @@ height: 40px;}
   padding-top: 30px;
 
 }
-.h2 .section-title {
+.h2.section-title {
+color: #352e2e;  /* Add any additional styles here */
 }
+
+
 .filter-btn {
   margin-inline: auto;
   color: #777;
@@ -1090,6 +1093,18 @@ z-index: 99999;
   -webkit-background-clip: text;
      -moz-background-clip: text;
           background-clip: text;
+}
+.footer-list-title {
+  background: linear-gradient(123deg, #ffffff -50.54%, #474240 88.34%);
+  background-clip: text;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+
 }
 .orange{
   background: linear-gradient(123deg, #FF9d2e -50.54%, #FF9d2e 88.34%);
